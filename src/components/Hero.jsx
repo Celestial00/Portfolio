@@ -11,7 +11,7 @@ export default function Hero() {
   return (
     <div className="flex flex-col-reverse md:flex-row mt-20 justify-between items-center gap-10">
       <div className="text-center md:text-left">
-        <h1 className="text-white text-4xl md:text-6xl font-semibold">
+        <h1 className="text-white text-4xl md:text-5xl font-semibold">
           Hi, I'm Shiraz
         </h1>
         <p className="text-sm text-white">24 Years Old SWE From Pakistan</p>
