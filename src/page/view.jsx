@@ -23,7 +23,7 @@ export default function View() {
       </div>
 
       {isImageLoading && (
-        <div className="absolute inset-0 flex justify-center items-center">
+        <div className=" w-full h-100 absolute md:top-50 md:right-10 flex justify-center items-center">
           <div className="w-10 h-10 border-4 border-dashed rounded-full animate-spin border-[#FF6A00]"></div>
         </div>
       )}
