@@ -17,7 +17,7 @@ function App() {
             <Route path="/projects" element={<Project />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/View/:ParamId" element={<View />} />
+            <Route path="/view/:ParamId" element={<View />} />
             <Route path="*" element={<Notfound />} />
           </Route>
         </Routes>
