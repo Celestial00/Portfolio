@@ -5,7 +5,7 @@ import Blog from "./page/Blog";
 import Mainlayout from "./layouts/Mainlayout";
 import Notfound from "./page/Notfound";
 import Contact from "./page/Contact";
-import View from "./page/View";
+import View from "./page/view";
 
 function App() {
   return (
