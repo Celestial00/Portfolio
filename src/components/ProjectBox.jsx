@@ -6,7 +6,7 @@ export default function ProjectBox({ Title, Desc, Image, Techno, Github }) {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="flex flex-col cursor-pointer rounded-sm border-[1.5px] border-gray-800 w-80 h-80 overflow-hidden">
+    <div className="flex flex-col cursor-pointer rounded-sm border-[1.5px] border-gray-800 w-full sm:w-80 h-80 overflow-hidden">
       {/* Image Box */}
       <div className="relative w-full h-1/2">
         {loading && (
