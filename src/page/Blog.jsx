@@ -22,7 +22,7 @@ export default function Blog() {
   return (
     <>
       <div className="text-white ">
-        <h1 className="text-5xl font-semibold my-10">My Blog</h1>
+        <h1 className="text-4xl md:text-5xl  font-semibold my-10">My Blog</h1>
       </div>
       <div className="">
         <div className="flex items-center justify-center gap-5">

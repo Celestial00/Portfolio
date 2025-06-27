@@ -44,7 +44,7 @@ export default function Contact() {
   return (
     <div className="my-10">
       <div className="text-white my-10">
-        <h1 className="text-5xl font-semibold">Contact Me</h1>
+        <h1 className="text-4xl md:text-5xl  font-semibold">Contact Me</h1>
       </div>
 
       <form ref={form} onSubmit={HandleSend}>
