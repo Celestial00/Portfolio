@@ -40,7 +40,7 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Image Container */}
+   
       <div className="relative w-40 h-40">
         {isImageLoading && (
           <div className="absolute inset-0 flex justify-center items-center">

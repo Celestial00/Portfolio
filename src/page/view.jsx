@@ -4,6 +4,7 @@ import { useState } from "react";
 
 export default function View() {
   const { ParamId } = useParams();
+  const [isImageLoading, setIsImageLoading] = useState(true);
 
   const [data, setData] = useState(() =>
     BlogData.find((data) => data.id === ParamId)
@@ -21,8 +22,17 @@ export default function View() {
         </p>
       </div>
 
+      {isImageLoading && (
+        <div className="absolute inset-0 flex justify-center items-center">
+          <div className="w-10 h-10 border-4 border-dashed rounded-full animate-spin border-[#FF6A00]"></div>
+        </div>
+      )}
+
       <img
-        className="w-full h-100 my-10 rounded-sm object-cover"
+        className={`w-full h-100 my-10 rounded-sm object-cover  ${
+          isImageLoading ? "opacity-0" : "opacity-100"
+        }`}
+        onLoad={() => setIsImageLoading(false)}
         src={data.image}
       ></img>
 
