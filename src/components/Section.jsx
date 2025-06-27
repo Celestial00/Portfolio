@@ -46,7 +46,7 @@ export default function Section() {
           onClick={() => ToggleMenu("work")}
           className={
             selected === "work"
-              ? "border-1 p-3 cursor-pointer rounded-sm border-[#FF6A00] text-[#FF6A00]"
+              ? "border-1 p-3 cursor-pointer rounded-sm border-[#FF6A00] text-[#FF6A00]  "
               : "cursor-pointer p-3"
           }
         >
@@ -56,7 +56,7 @@ export default function Section() {
           onClick={() => ToggleMenu("education")}
           className={
             selected === "education"
-              ? "border-1 p-3 cursor-pointer rounded-sm border-[#FF6A00] text-[#FF6A00]"
+              ? "border-1 p-3 cursor-pointer rounded-sm border-[#FF6A00] text-[#FF6A00]  "
               : "cursor-pointer p-3"
           }
         >
@@ -70,7 +70,7 @@ export default function Section() {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 50 }}
-          transition={{ duration: 0.3, ease: "easeInOut" }}
+          transition={{ duration: 0.7, ease: "easeInOut" }}
         >
           {(selected === "work" ? workExperience : educationBackground).map(
             (exp, index) => (

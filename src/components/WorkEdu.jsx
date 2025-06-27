@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WorkEdu({ Title, Place, Date, Desc, project }) {
   return (
-    <div className=" mt-5 rounded-sm border border-gray-900 p-5">
+    <div className=" mt-5 rounded-sm border border-gray-800 p-5">
       <div className="flex justify-between items-center ">
         <div className=" flex items-center justify-center gap-4">
           {/* <div className=" bg-gray-700 rounded-4xl w-10 h-10 "></div> */}
