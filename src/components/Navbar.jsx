@@ -7,13 +7,12 @@ export default function Navbar() {
         <Link to={"/"}>
           {" "}
           <h1 className="text-2xl font-semibold hover:text-[#FF6A00] cursor-pointer">
-            Sheeraz Ali
+            Shiraz<span className=" text-[#FF6A00] ">.</span>
           </h1>
         </Link>
       </div>
 
       <div className="flex gap-4 text-md">
-        
         <Link className=" hover:text-[#FF6A00]" to="/projects">
           Projects
         </Link>
