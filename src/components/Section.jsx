@@ -12,15 +12,15 @@ export default function Section() {
   const workExperience = [
     {
       title: "Frontend & Backend Intern",
-      place: "LoftSoft (Software House)",
+      place: "LoftSoft - Software House",
       description:
         "Worked on full-stack development projects using React for the frontend and Express.js for backend services. Used MongoDB as the primary database.",
-      date: "2/4/2023 - 2/7/2023 (Completed Internship)",
+      date: "2/4/2023 - 2/7/2023",
       projects: ["React-based Dashboard", "Express API with MongoDB"],
     },
     {
       title: "Backend Developer Intern",
-      place: "Verios",
+      place: "Verior - Software House",
       description:
         "Currently working as a Backend Intern using the MERN Stack. Focused on building scalable backend systems and integrating frontend APIs.",
       date: "Ongoing Internship",

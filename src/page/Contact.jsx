@@ -18,28 +18,28 @@ export default function Contact() {
     }));
   };
 
-  const HandleSend = (e) => {
-    e.preventDefault();
+const HandleSend = (e) => {
+  e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_hboz3yr",
-        "template_gv55wrr",
-        form.current,
-        "_qkOEWO7cLGCy4maA"
-      )
-      .then(
-        (result) => {
-          console.log("Email sent:", result.text);
-          alert("Message sent successfully!");
-          setData({ name: "", email: "", message: "" }); // clear form
-        },
-        (error) => {
-          console.error("Failed to send email:", error.text);
-          alert("Failed to send message. Try again.");
-        }
-      );
-  };
+  emailjs
+    .sendForm(
+      "service_hboz3yr",
+      "template_gv55wrr",
+      form.current,
+      "_qkOEWO7cLGCy4maA"
+    )
+    .then(
+      (result) => {
+        console.log("Email sent:", result.text);
+        alert("Message sent successfully!");
+        setData({ name: "", email: "", message: "" });
+      },
+      (error) => {
+        console.error("Failed to send email:", error.text);
+        alert("Failed to send message. Try again.");
+      }
+    );
+};
 
   return (
     <div className="my-10">
