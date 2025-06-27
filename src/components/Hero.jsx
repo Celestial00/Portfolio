@@ -19,7 +19,8 @@ export default function Hero() {
         <p className="text-sm text-white">24 Years Old SWE From Pakistan</p>
         <p className="text-gray-400 mt-5">
           Full Stack Developer Specializing in MERN Stack & AI
-          <br /> Integration Open to New Opportunities
+          <br className=" hidden md:block " /> Integration Open to New
+          Opportunities
         </p>
 
         <div className="flex mt-5 gap-5 items-center justify-center md:justify-start">
