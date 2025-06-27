@@ -5,8 +5,10 @@ import {
 } from "react-icons/sl";
 
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Hero() {
+  const [isImageLoading, setIsImageLoading] = useState(true);
 
   return (
     <div className="flex flex-col-reverse md:flex-row mt-20 justify-between items-center gap-10">
@@ -28,7 +30,7 @@ export default function Hero() {
             </div>
           </a>
 
-          <Link to="https://www.linkedin.com/in/sheerazwahab/" target="_black">
+          <Link to="https://www.linkedin.com/in/sheerazwahab/" target="_blank">
             <SlSocialLinkedin className="w-6 h-6 text-gray-500 hover:text-[#FF6A00]" />
           </Link>
           <Link to={"https://github.com/Celestial00"} target="_blank">
@@ -37,10 +39,22 @@ export default function Hero() {
         </div>
       </div>
 
-      <img
-        className="rounded-sm w-40 h-40 bg-black opacity-90"
-        src={"/assets/me.jpeg"}
-      />
+      {/* Image Container */}
+      <div className="relative w-40 h-40">
+        {isImageLoading && (
+          <div className="absolute inset-0 flex justify-center items-center">
+            <div className="w-10 h-10 border-4 border-dashed rounded-full animate-spin border-[#FF6A00]"></div>
+          </div>
+        )}
+        <img
+          className={`rounded-sm w-full h-full object-cover bg-black transition-opacity duration-500 ${
+            isImageLoading ? "opacity-0" : "opacity-100"
+          }`}
+          src="/assets/me.jpeg"
+          alt="Sheeraz"
+          onLoad={() => setIsImageLoading(false)}
+        />
+      </div>
     </div>
   );
 }
