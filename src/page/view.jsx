@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import BlogData from "../constants/blogData";
 import { useState } from "react";
 
-export default function view() {
+export default function View() {
   const { ParamId } = useParams();
 
   const [data, setData] = useState(() =>
@@ -26,12 +26,10 @@ export default function view() {
         src={data.image}
       ></img>
 
-
-    <div
-  className="blog-content text-white space-y-4"
-  dangerouslySetInnerHTML={{ __html: data.description }}
-></div>
-
+      <div
+        className="blog-content text-white space-y-4"
+        dangerouslySetInnerHTML={{ __html: data.description }}
+      ></div>
 
       <div className="text-white my-5">Tags</div>
       <div className=" flex flex-col md:flex-row  gap-2">
