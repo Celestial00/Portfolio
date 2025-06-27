@@ -44,17 +44,19 @@ export default function Blog() {
           {searching
             ? filteredList.map((blog, index) => (
                 <BlogBox
+                  Id={blog.id}
                   key={index}
                   Title={blog.title}
-                  Desc={blog.description}
+                  Desc={blog.description.replace(/<[^>]*>/g, "")}
                   Date={blog.date}
                 />
               ))
             : blog.map((blog, index) => (
                 <BlogBox
+                  Id={blog.id}
                   key={index}
                   Title={blog.title}
-                  Desc={blog.description}
+                  Desc={blog.description.replace(/<[^>]*>/g, "")}
                   Date={blog.date}
                 />
               ))}

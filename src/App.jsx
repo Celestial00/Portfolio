@@ -5,6 +5,7 @@ import Blog from "./page/Blog";
 import Mainlayout from "./layouts/Mainlayout";
 import Notfound from "./page/Notfound";
 import Contact from "./page/contact";
+import View from "./page/view";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Route path="/projects" element={<Project />} />
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/view/:ParamId" element={<View />} />
             <Route path="*" element={<Notfound />} />
           </Route>
         </Routes>

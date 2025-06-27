@@ -1,6 +1,35 @@
 @import "tailwindcss";
 
 body {
-  background: #0D0D0D ;
-  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  font-family: "Poppins", sans-serif;
+}
+
+.blog-content h2 {
+  @apply text-2xl font-bold mt-6 mb-2 text-white;
+}
+
+.blog-content p {
+  @apply text-base leading-relaxed text-gray-300;
+}
+
+.blog-content ul {
+  @apply list-disc list-inside pl-4 text-gray-200 space-y-1;
+}
+
+.blog-content li {
+  @apply ml-4;
+}
+
+
+@layer utilities {
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill {
+    @apply bg-transparent text-white border-none outline-none;
+    -webkit-box-shadow: 0 0 0px 1000px #0d0d0d inset !important;
+    -webkit-text-fill-color: white !important;
+    transition: background-color 9999s ease-in-out 0s;
+  }
 }

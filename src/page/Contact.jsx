@@ -48,7 +48,7 @@ export default function Contact() {
       </div>
 
       <form ref={form} onSubmit={HandleSend}>
-        <div className="flex flex-col md:flex-row gap-2">
+        <div className="flex flex-col md:flex-row text-white gap-2">
           <div className="cursor-pointer border-[1.5px] w-full my-2 px-5 py-5 border-gray-800">
             <input
               type="text"

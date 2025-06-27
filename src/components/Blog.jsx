@@ -19,7 +19,7 @@ export default function Blog() {
 
       <div className="flex flex-wrap">
         <AnimatePresence>
-          {blog.map((blog, index) => (
+          {blog.slice(0, 3).map((blog, index) => (
             <motion.div
               key={blog.title + index}
               initial={{ opacity: 0, x: -50 }} // starts left
@@ -28,8 +28,9 @@ export default function Blog() {
               transition={{ duration: 0.7, ease: "easeInOut" }}
             >
               <BlogBox
+                Id={blog.id}
                 Title={blog.title}
-                Desc={blog.description}
+                Desc={blog.description.replace(/<[^>]*>/g, '')}
                 Date={blog.date}
               />
             </motion.div>
