@@ -1,11 +1,10 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import { TfiEmail } from "react-icons/tfi";
-import { RxInstagramLogo } from "react-icons/rx";
 import { Link } from "react-router-dom";
 
 export default function Contact() {
   const form = useRef();
+  const [copied, setCopied] = useState(false);
 
   const [data, setData] = useState({
     from_name: "",
@@ -35,7 +34,7 @@ export default function Contact() {
         (result) => {
           console.log("Email sent:", result.text);
           alert("Message sent successfully!");
-          setData({ name: "", email: "", message: "" });
+          setData({ from_name: "", from_email: "", message: "" });
         },
         (error) => {
           console.error("Failed to send email:", error.text);
@@ -44,10 +43,18 @@ export default function Contact() {
       );
   };
 
+  const handleEmailCopy = () => {
+    const email = "SheerazAlee223@gmail.com"; // <-- Replace with your actual email
+    navigator.clipboard.writeText(email).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    });
+  };
+
   return (
     <div className="my-10">
       <div className="text-white my-10">
-        <h1 className="text-4xl md:text-5xl  font-semibold">Contact Me</h1>
+        <h1 className="text-4xl md:text-5xl font-semibold">Contact Me</h1>
       </div>
 
       <form ref={form} onSubmit={HandleSend}>
@@ -56,7 +63,7 @@ export default function Contact() {
             <input
               type="text"
               name="from_name"
-              value={data.name}
+              value={data.from_name}
               placeholder="Name"
               onChange={HandleData}
               required
@@ -68,7 +75,7 @@ export default function Contact() {
             <input
               type="email"
               name="from_email"
-              value={data.email}
+              value={data.from_email}
               placeholder="Email"
               onChange={HandleData}
               required
@@ -96,24 +103,14 @@ export default function Contact() {
         </button>
       </form>
 
-      <div className=" flex flex-col gap-2 mt-10  text-[15px] text-gray-500">
-        <p> If you don't like forms below is my email and Social Handle </p>
-
-        <div className=" flex gap-1 items-center hover:text-[#FF6A00] ">
-          <TfiEmail />
-          <p>SheerazAlee223@Gmail.com</p>
-        </div>
-
-        <div className=" flex gap-1 items-center hover:text-[#FF6A00] ">
-          <RxInstagramLogo />
-          <Link
-            className=" "
-            to="https://www.instagram.com/sheerazalee_/?hl=en"
-            target="_black"
-          >
-            https://www.instagram.com/sheerazalee_/?hl=en
+      <div className="flex gap-1 mt-3 items-center cursor-pointer text-gray-500">
+        <p>
+          By submitting this form, I agree to the{" "}
+          <Link className="hover:text-[#FF6A00]" to="privacy policy">
+            privacy policy
           </Link>
-        </div>
+          .
+        </p>
       </div>
     </div>
   );

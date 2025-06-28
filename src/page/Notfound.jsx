@@ -1,6 +1,6 @@
 export default function Notfound() {
   return (
-    <div className=" max-w-screen h-lvh  font-bold flex flex-col justify-center items-center ">
+    <div className=" max-w-screen h-screen  font-bold flex flex-col justify-center items-center ">
       <p className=" font-bold text-9xl text-white  ">
         4<span className=" text-[#FF6A00] ">0</span>4
       </p>

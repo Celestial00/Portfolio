@@ -6,6 +6,7 @@ import Mainlayout from "./layouts/Mainlayout";
 import Notfound from "./page/Notfound";
 import Contact from "./page/Contact";
 import View from "./page/view";
+import Privacy from "./page/Privacy";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/view/:ParamId" element={<View />} />
+            <Route path="/privacy" element={<Privacy />} />
             <Route path="*" element={<Notfound />} />
           </Route>
         </Routes>

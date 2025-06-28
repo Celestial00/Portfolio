@@ -26,9 +26,9 @@ export default function ProjectSec() {
               {ProData.map((Data, index) => (
                 <motion.div
                   key={Data.title + index}
-                  initial={{ opacity: 0, x: -50 }} // start left
-                  animate={{ opacity: 1, x: 0 }} // move to normal
-                  exit={{ opacity: 0, x: 50 }} // fade out to right (optional)
+                  initial={{ opacity: 0, x: -50 }} 
+                  animate={{ opacity: 1, x: 0 }} 
+                  exit={{ opacity: 0, x: 50 }} 
                   transition={{ duration: 0.7, ease: "easeInOut" }}
                 >
                   <ProjectBox
