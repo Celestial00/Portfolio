@@ -21,18 +21,18 @@ export default function Blog() {
 
   return (
     <>
-      <div className="text-white ">
+      <div className="text-white dark:text-black ">
         <h1 className="text-4xl md:text-5xl  font-semibold my-10">My Blog</h1>
       </div>
       <div className="">
         <div className="flex items-center justify-center gap-5">
           {" "}
-          <div className="cursor-pointer border-[1.5px] w-full  my-2 px-5 py-5 border-gray-800">
+          <div className="cursor-pointer border-[1.5px] w-full  my-2 px-5 py-5 dark:border-gray-300 border-gray-800">
             <input
               type="text"
               placeholder="Search.."
               onChange={(e) => HandleSearch(e)}
-              className=" w-full outline-none text-white "
+              className=" w-full outline-none dark:text-black text-white "
             />
           </div>
           <div className=" w-20 flex justify-center h-17 rounded-sm cursor items-center bg-orange-500 cursor-pointer  hover:bg-orange-600 transition">

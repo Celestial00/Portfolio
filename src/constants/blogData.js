@@ -20,13 +20,13 @@ const blogs = [
     `,
     date: "2023-11-05",
     tags: ["AI", "Image Recognition", "Computer Vision", "Real-time Systems"],
-    image: "https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg"
+    image: "https://images.pexels.com/photos/691710/pexels-photo-691710.jpeg",
   },
   {
     id: "b2",
     title: "Building Scalable Apps with the MERN Stack",
     description: `
-      <h2>Introduction</h2>
+      <h2  >Introduction</h2>
       <p>The MERN stack is a popular JavaScript framework that empowers developers to create scalable, maintainable, and modern web applications from front to back using MongoDB, Express, React, and Node.js.</p>
       
       <h2>Best Practices</h2>
@@ -42,7 +42,7 @@ const blogs = [
     `,
     date: "2024-02-14",
     tags: ["MERN", "React", "Node.js", "Full-stack", "MongoDB"],
-    image: "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg"
+    image: "https://images.pexels.com/photos/177598/pexels-photo-177598.jpeg",
   },
   {
     id: "b3",
@@ -63,7 +63,7 @@ const blogs = [
     `,
     date: "2023-08-27",
     tags: ["CNN", "Deep Learning", "AI", "Computer Vision", "Neural Networks"],
-    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg"
+    image: "https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg",
   },
   {
     id: "b4",
@@ -85,7 +85,7 @@ const blogs = [
     `,
     date: "2024-05-12",
     tags: ["Backend", "Node.js", "Express", "API", "Security"],
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
+    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
   },
   {
     id: "b5",
@@ -107,8 +107,8 @@ const blogs = [
     `,
     date: "2024-04-01",
     tags: ["MERN", "AI", "Machine Learning", "React", "Flask"],
-    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg"
-  }
+    image: "https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg",
+  },
 ];
 
 export default blogs;

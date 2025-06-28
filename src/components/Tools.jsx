@@ -24,10 +24,10 @@ export default function Tools() {
   return (
     <div className="mt-10 mb-10">
       <Link to="/projects">
-        <div className="flex justify-between mt-8 mb-8 items-center cursor-pointer">
-          <div className="text-white text-2xl">Tech Stack</div>
-          <div className="flex gap-2 items-center text-white hover:text-[#FF6A00]">
-            <p>view more</p> <PiArrowCircleRight className="w-5 h-5" />
+        <div className="flex justify-between  mt-8 mb-8 items-center cursor-pointer">
+          <div className="text-white dark:text-black text-2xl">Tech Stack</div>
+          <div className="flex gap-2 items-center dark:text-black text-white hover:text-[#FF6A00]">
+            <class>view more</class> <PiArrowCircleRight className="w-5 h-5" />
           </div>
         </div>
       </Link>
@@ -39,13 +39,13 @@ export default function Tools() {
         transition={{ duration: 0.7 }}
         className="flex flex-wrap justify-center gap-4"
       >
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-4 gap-4">
           {techStack.map((tool, index) => {
             const Icon = tool.icon;
             return (
               <div
                 key={index}
-                className="flex flex-col items-center justify-center gap-2 cursor-pointer rounded-xl border border-gray-500 text-white hover:scale-105 transition-transform p-4 w-full h-[100px]"
+                className="flex flex-col items-center justify-center gap-2 cursor-pointer rounded-xl border dark:border-gray-300 border-gray-500 text-white hover:scale-105 transition-transform p-4 w-full h-[100px]"
               >
                 <Icon className="text-3xl text-[#FF6A00]" />
                 <span className="text-[11px] text-center text-gray-400">

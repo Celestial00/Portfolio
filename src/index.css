@@ -1,20 +1,21 @@
 @import "tailwindcss";
 
-body {
-  background: #0d0d0d;
+* {
   font-family: "Poppins", sans-serif;
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 .blog-content h2 {
-  @apply text-2xl font-bold mt-6 mb-2 text-white;
+  @apply text-2xl font-bold mt-6 mb-2 dark:text-black text-white;
 }
 
 .blog-content p {
-  @apply text-base leading-relaxed text-gray-300;
+  @apply text-base leading-relaxed dark:text-gray-600  text-gray-300;
 }
 
 .blog-content ul {
-  @apply list-disc list-inside pl-4 text-gray-200 space-y-1;
+  @apply list-disc list-inside pl-4 dark:text-gray-600 text-gray-200 space-y-1;
 }
 
 .blog-content li {

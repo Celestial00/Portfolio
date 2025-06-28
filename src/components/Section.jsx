@@ -41,7 +41,7 @@ export default function Section() {
 
   return (
     <div>
-      <div className="mt-20 flex justify-center items-center text-white">
+      <div className="mt-20 flex justify-center items-center dark:text-black text-white">
         <div
           onClick={() => ToggleMenu("work")}
           className={

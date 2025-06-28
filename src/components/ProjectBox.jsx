@@ -6,7 +6,7 @@ export default function ProjectBox({ Title, Desc, Image, Techno, Github }) {
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="flex flex-col cursor-pointer rounded-sm border-[1.5px] border-gray-800 w-full sm:w-80 h-80 overflow-hidden">
+    <div className="flex flex-col cursor-pointer rounded-sm border-[1.5px] dark:border-gray-300 border-gray-800 w-full sm:w-80 h-80 overflow-hidden">
       {/* Image Box */}
       <div className="relative w-full h-1/2">
         {loading && (
@@ -27,7 +27,7 @@ export default function ProjectBox({ Title, Desc, Image, Techno, Github }) {
 
       {/* Title & Description */}
       <div className="p-3">
-        <h1 className="text-xl text-white">{Title}</h1>
+        <h1 className="text-xl dark:text-black text-white">{Title}</h1>
         <p className="text-gray-400 mt-1 text-[11px]">{Desc}</p>
       </div>
 

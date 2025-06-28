@@ -1,6 +1,6 @@
 export default function Privacy() {
   return (
-    <div className="text-white   py-10">
+    <div className="text-white dark:text-black    py-10">
       <h1 className="text-4xl md:text-5xl font-bold mb-2">Privacy Policy</h1>
       <p className="text-sm text-gray-400 mb-6 cursor-pointer hover:text-[#FF6A00]  ">
         Last Updated: June 2025
@@ -8,7 +8,7 @@ export default function Privacy() {
 
       <section className="mb-6">
         <h2 className="text-2xl font-semibold mb-2">Hey There — Welcome!</h2>
-        <p className="text-gray-400" >
+        <p className="text-gray-400">
           Thanks for checking out my site! This Privacy Policy is just a quick
           walkthrough of what kind of data I handle (spoiler: not much), how I
           use it, and how I respect your privacy every step of the way.
