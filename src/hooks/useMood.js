@@ -7,15 +7,13 @@ export default function useMood() {
     setThemeData((prev) => !prev);
   }
 
-  useEffect(() => {
-    if (themeData) {
-      document.documentElement.classList.add("dark");
-      localStorage.setItem("theme", "dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-      localStorage.setItem("theme", "light");
-    }
-  }, [themeData]);
+  if (themeData) {
+    document.documentElement.classList.add("dark");
+    localStorage.setItem("theme", "dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+    localStorage.setItem("theme", "light");
+  }
 
   return [themeData, toggleTheme];
 }
