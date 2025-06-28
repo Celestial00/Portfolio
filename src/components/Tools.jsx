@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { PiArrowCircleRight } from "react-icons/pi";
 
-import { FaNodeJs } from "react-icons/fa";
+import { FaNodeJs, FaReact } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
-import { RiNextjsLine } from "react-icons/ri";
+import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandMongodb, TbBrandFlutter } from "react-icons/tb";
 import { IoFlaskOutline } from "react-icons/io5";
 
@@ -15,6 +15,8 @@ const techStack = [
   { name: "Next.js", icon: RiNextjsLine },
   { name: "MongoDB", icon: TbBrandMongodb },
   { name: "Flask", icon: IoFlaskOutline },
+  { name: "Tailwindcss", icon: RiTailwindCssFill },
+  { name: "React", icon: FaReact },
   { name: "Flutter", icon: TbBrandFlutter },
 ];
 
@@ -37,20 +39,22 @@ export default function Tools() {
         transition={{ duration: 0.7 }}
         className="flex flex-wrap justify-center gap-4"
       >
-        {techStack.map((tool, index) => {
-          const Icon = tool.icon;
-          return (
-            <div
-              key={index}
-              className="flex flex-col items-center justify-center gap-2 cursor-pointer rounded-xl border border-gray-500 text-white hover:scale-105 transition-transform p-4 w-[100px] h-[100px] basis-1/3 max-w-[120px]"
-            >
-              <Icon className="text-3xl text-[#FF6A00]" />
-              <span className="text-[11px] text-center text-gray-400">
-                {tool.name}
-              </span>
-            </div>
-          );
-        })}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          {techStack.map((tool, index) => {
+            const Icon = tool.icon;
+            return (
+              <div
+                key={index}
+                className="flex flex-col items-center justify-center gap-2 cursor-pointer rounded-xl border border-gray-500 text-white hover:scale-105 transition-transform p-4 w-full h-[100px]"
+              >
+                <Icon className="text-3xl text-[#FF6A00]" />
+                <span className="text-[11px] text-center text-gray-400">
+                  {tool.name}
+                </span>
+              </div>
+            );
+          })}
+        </div>
       </motion.div>
     </div>
   );
