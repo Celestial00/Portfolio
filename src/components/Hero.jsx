@@ -9,6 +9,8 @@ import { useState } from "react";
 
 export default function Hero() {
   const [isImageLoading, setIsImageLoading] = useState(true);
+  const BIRTHDATE = 2003;
+  const date = new Date();
 
   return (
     <div className="flex flex-col-reverse md:flex-row mt-20 justify-between items-center gap-10">
@@ -16,7 +18,9 @@ export default function Hero() {
         <h1 className="text-white text-4xl md:text-5xl font-semibold">
           Hi, I'm Shiraz
         </h1>
-        <p className="text-sm text-white">24 Years Old SWE From Pakistan</p>
+        <p className="text-sm text-white">
+          { date.getFullYear() - BIRTHDATE} Years Old SWE From Pakistan
+        </p>
         <p className="text-gray-400 mt-5">
           Full Stack Developer Specializing in MERN Stack & AI
           <br className=" hidden md:block " /> Integration Open to New
@@ -40,7 +44,6 @@ export default function Hero() {
         </div>
       </div>
 
-   
       <div className="relative w-40 h-40">
         {isImageLoading && (
           <div className="absolute inset-0 flex justify-center items-center">
