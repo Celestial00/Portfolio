@@ -106,7 +106,7 @@ export default function Contact() {
       <div className="flex gap-1 mt-3 items-center cursor-pointer text-gray-500">
         <p>
           By submitting this form, I agree to the{" "}
-          <Link className="hover:text-[#FF6A00]" to="privacy policy">
+          <Link className="hover:text-[#FF6A00]" to="/privacy">
             privacy policy
           </Link>
           .

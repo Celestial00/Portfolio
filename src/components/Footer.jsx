@@ -6,8 +6,8 @@ export default function Footer() {
   const handleEmailCopy = () => {
     const email = "SheerazAlee223@gmail.com";
     navigator.clipboard.writeText(email).then(() => {
+      alert("email Copied!");
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
     });
   };
 
