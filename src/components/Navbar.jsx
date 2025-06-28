@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { BsFillMoonStarsFill } from "react-icons/bs";
 import { PiSunBold } from "react-icons/pi";
 import useMood from "../hooks/useMood";
 import { IoMoonOutline } from "react-icons/io5";
