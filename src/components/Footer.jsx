@@ -12,7 +12,7 @@ export default function Footer() {
   };
 
   return (
-    <div className=" flex justify-between mb-5 mt-5 items-center ">
+    <div className=" flex flex-col-reverse gap-2 justify-between md:gap-0 md:flex-row mb-5 mt-5 items-center ">
       <p className="text-sm text-gray-500">
         {" "}
         © 2025 Sheeraz |{" "}

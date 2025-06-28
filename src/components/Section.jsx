@@ -34,7 +34,7 @@ export default function Section() {
       place: "Mehran University of Engineering and Technology",
       description:
         "Pursued core software engineering subjects including algorithms, databases, and web development. Developed practical and research-based projects.",
-      date: "Graduation Expected / Completed 12/1/2025",
+      date: "Graduated 12/1/2025",
       projects: ["AI-Based Pattern Detection in E-commerce"],
     },
   ];
