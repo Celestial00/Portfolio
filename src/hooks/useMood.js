@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 export default function useMood() {
   const [themeData, setThemeData] = useState(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme === "dark"; // defaults to false (light) if nothing is saved
+    return savedTheme === "dark"; 
   });
 
   const toggleTheme = () => {
