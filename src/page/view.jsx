@@ -18,7 +18,7 @@ export default function View() {
         </h1>
 
         <p className=" text-[11px] mt-1  hover:text-[#FF6A00] cursor-pointer text-gray-400 ">
-          2/2/2025
+          {data.date}
         </p>
       </div>
 

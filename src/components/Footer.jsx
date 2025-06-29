@@ -14,12 +14,10 @@ export default function Footer() {
   return (
     <div className=" flex flex-col-reverse gap-2 justify-between md:gap-0 md:flex-row mb-5 mt-5 items-center ">
       <p className="text-sm text-gray-500">
-        {" "}
-        © 2025 Sheeraz |{" "}
+        © 2025 Sheeraz |
         <Link to="privacy" className=" hover:text-[#FF6A00]  ">
-          {" "}
-          Privacy Policy{" "}
-        </Link>{" "}
+          Privacy Policy
+        </Link>
       </p>
 
       <div className="flex gap-5 items-center justify-center md:justify-start">
