@@ -3,6 +3,7 @@ import {
   SlSocialGithub,
   SlCloudDownload,
 } from "react-icons/sl";
+import { TfiEmail } from "react-icons/tfi";
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -11,6 +12,14 @@ export default function Hero() {
   const [isImageLoading, setIsImageLoading] = useState(true);
   const BIRTHDATE = 2003;
   const date = new Date();
+
+  const handleEmailCopy = () => {
+    const email = "SheerazAlee223@gmail.com";
+    navigator.clipboard.writeText(email).then(() => {
+      alert("email Copied!");
+      setCopied(true);
+    });
+  };
 
   return (
     <div className="flex flex-col-reverse md:flex-row mt-20 justify-between items-center gap-10">
@@ -41,6 +50,11 @@ export default function Hero() {
           <Link to={"https://github.com/Celestial00"} target="_blank">
             <SlSocialGithub className="w-6 h-6 dark:text-gray-400 text-gray-500 hover:text-[#FF6A00]" />
           </Link>
+
+          <TfiEmail
+            onClick={handleEmailCopy}
+            className="w-6 h-6 cursor-pointer dark:text-gray-400 text-gray-500 hover:text-[#FF6A00]"
+          />
         </div>
       </div>
 
