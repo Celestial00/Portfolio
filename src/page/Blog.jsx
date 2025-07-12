@@ -5,18 +5,17 @@ import { useState } from "react";
 export default function Blog() {
   const [blog, setBlog] = useState(blogData);
   const [searching, setSearching] = useState(false);
+  const [query, setQuery] = useState("");
   const [filteredList, setFilteredList] = useState([]);
 
   const HandleSearch = (e) => {
+    const searchTerm = e.target.value.toLowerCase();
     setSearching(true);
-    const SearchValue = e.target.value.toLowerCase();
-    console.log(SearchValue);
-    setFilteredList(
-      blog.filter((item) =>
-        item.title.toLowerCase().includes(e.target.value.toLowerCase())
-      )
+    setQuery(searchTerm);
+    const filtered = blog.filter((item) =>
+      item.title.toLowerCase().includes(searchTerm)
     );
-    console.log(filteredList);
+    setFilteredList(filtered);
   };
 
   return (
@@ -30,12 +29,20 @@ export default function Blog() {
           <div className="cursor-pointer border-[1.5px] w-full  my-2 px-5 py-5 dark:border-gray-300 border-gray-800">
             <input
               type="text"
+              value={query}
               placeholder="Search.."
               onChange={(e) => HandleSearch(e)}
               className=" w-full outline-none dark:text-black text-white "
             />
           </div>
-          <div className=" w-20 flex justify-center h-17 rounded-sm cursor items-center bg-orange-500 cursor-pointer  hover:bg-orange-600 transition">
+          <div
+            onClick={() => {
+              setQuery("");
+              setSearching(false);
+              setFilteredList([]);
+            }}
+            className=" w-20 flex justify-center h-17 rounded-sm cursor items-center bg-orange-500 cursor-pointer  hover:bg-orange-600 transition"
+          >
             clear
           </div>
         </div>
