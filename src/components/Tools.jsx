@@ -27,7 +27,7 @@ export default function Tools() {
         <div className="flex justify-between  mt-8 mb-8 items-center cursor-pointer">
           <div className="text-white dark:text-black text-2xl">Tech Stack</div>
           <div className="flex gap-2 items-center dark:text-black text-white hover:text-[#FF6A00]">
-            <class>view more</class> <PiArrowCircleRight className="w-5 h-5" />
+            <p>view more</p> <PiArrowCircleRight className="w-5 h-5" />
           </div>
         </div>
       </Link>
@@ -38,6 +38,7 @@ export default function Tools() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
         className="flex flex-wrap justify-center gap-4"
+       
       >
         <div className="grid grid-cols-2  sm:grid-cols-3 md:grid-cols-4 gap-4">
           {techStack.map((tool, index) => {

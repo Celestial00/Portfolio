@@ -20,6 +20,7 @@ export default function Projects() {
             Image={Data.image}
             Techno={Data.technologies}
             Github={Data.github}
+            Live={Data.Live}
           />
         ))}
       </div>
