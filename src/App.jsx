@@ -5,11 +5,12 @@ const Home = lazy(() => import("./page/Home"));
 const Project = lazy(() => import("./page/Projects"));
 const Blog = lazy(() => import("./page/Blog"));
 
-const Mainlayout = lazy(() => import("./layouts/Mainlayout"));
-const Notfound = lazy(() => import("./page/Notfound"));
-const Contact = lazy(() => import("./page/Contact"));
-const View = lazy(() => import("./page/view"));
-const Privacy = lazy(() => import("./page/Privacy"));
+import Mainlayout from "./layouts/Mainlayout";
+import Notfound from "./page/Notfound";
+import Contact from "./page/Contact";
+import View from "./page/view";
+import Privacy from "./page/Privacy";
+import TechStackPage from "./page/TechStackPage";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/view/:ParamId" element={<View />} />
               <Route path="/privacy" element={<Privacy />} />
+              <Route path="/TechStack" element={<TechStackPage />} />
               <Route path="*" element={<Notfound />} />
             </Route>
           </Routes>

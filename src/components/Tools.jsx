@@ -23,7 +23,7 @@ const techStack = [
 export default function Tools() {
   return (
     <div className="mt-10 mb-10">
-      <Link to="/projects">
+      <Link to="/TechStack">
         <div className="flex justify-between  mt-8 mb-8 items-center cursor-pointer">
           <div className="text-white dark:text-black text-2xl">Tech Stack</div>
           <div className="flex gap-2 items-center dark:text-black text-white hover:text-[#FF6A00]">
