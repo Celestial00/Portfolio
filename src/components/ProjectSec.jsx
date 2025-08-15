@@ -37,6 +37,7 @@ export default function ProjectSec() {
                     Image={Data.image}
                     Techno={Data.technologies}
                     Github={Data.github}
+                    Live={Data.Live}
                   />
                 </motion.div>
               ))}
