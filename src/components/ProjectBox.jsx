@@ -15,7 +15,7 @@ export default function ProjectBox({
 
   return (
     <div className="flex flex-col  rounded-sm border-[1.5px] dark:border-gray-300 border-gray-800 w-full sm:w-80 h-80 overflow-hidden">
-      <div className="relative w-full h-1/2">
+      <div className="relative w-full ">
         {loading && (
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-80">
             <div className="w-8 h-8 border-4 border-dashed rounded-full animate-spin border-[#FF6A00]"></div>
