@@ -6,7 +6,7 @@ const projects = [
     image: "/assets/book-ss.png",
     technologies: ["Firebase", "React", "Node.js", "TailwindCSS"],
     github: "https://github.com/Celestial00/BookHive",
-    Live: "https://cine-scope-zpjd.vercel.app/",
+    Live: "https://book-hive-qlnk.vercel.app",
   },
 
   {
@@ -16,7 +16,7 @@ const projects = [
     image: "/assets/Cine-ss.png",
     technologies: ["Firebase", "React", "Node.js", "TailwindCSS"],
     github: "https://github.com/Celestial00/CineScope",
-    Live: "https://book-hive-qlnk.vercel.app/",
+    Live: "https://cine-scope-zpjd.vercel.app",
   },
   {
     title: "Blog Platform",
