@@ -49,11 +49,13 @@ export default function ProjectBox({
       </div>
 
       <div className="flex gap-x-3 px-3 py-4">
-        <Link to={Github} target="_blank">
-          <div className="">
-            <SlSocialGithub className="h-5 w-5 text-[#FF6A00]" />
-          </div>
-        </Link>
+        {Github ? (
+          <Link to={Github} target="_blank">
+            <div className="">
+              <SlSocialGithub className="h-5 w-5 text-[#FF6A00]" />
+            </div>
+          </Link>
+        ) : null}
 
         {Live ? (
           <Link to={Live} target="_blank">

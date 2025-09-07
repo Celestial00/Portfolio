@@ -19,13 +19,13 @@ const projects = [
     Live: "https://cine-scope-zpjd.vercel.app",
   },
   {
-    title: "Blog Platform",
+    title: "University Dissertation",
     description:
-      "A full-featured blogging platform built using the MERN stack. Users can write, edit, and read blogs with a responsive and clean UI.",
-    image: "/assets/MERNBlog.png",
+      "A MERN stack full-stack web app with authentication, CRUD, and efficient data management..",
+    image: "/assets/Disseration.png",
     technologies: ["MongoDB", "Express", "React", "Node.js", "TailwindCSS"],
-    github: "https://github.com/Celestial00/MERN-Blog",
-    Live: null,
+    github: null,
+    Live: "https://217.154.117.231",
   },
   {
     title: "Health Metric System",
