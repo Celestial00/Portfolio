@@ -14,7 +14,7 @@ export default function ProjectBox({
   const [loading, setLoading] = useState(true);
 
   return (
-    <div className="flex flex-col  rounded-sm border-[1.5px] dark:border-gray-300 border-gray-800 w-full sm:w-80 h-75 overflow-hidden">
+    <div className="flex flex-col  rounded-sm border-[1.5px] dark:border-gray-300 border-gray-800 w-full sm:w-80  overflow-hidden">
       <div className="relative w-full ">
         {loading && (
           <div className="absolute inset-0 flex justify-center items-center bg-black bg-opacity-80">
