@@ -23,11 +23,13 @@ export default function WorkEdu({ Title, Place, Date, Desc, project }) {
       </div>
       <p className="text-gray-400 text-sm mt-2"> {Desc} </p>
       <div className="">
-        <p className="text-white dark:text-black mt-1">Project</p>
+        <p className="text-white dark:text-black mt-2">Project</p>
         {project.map((pro, index) => (
-          <li key={index} className="mt-1 text-sm text-gray-400">
+         <div className="">
+           <li key={index} className="mt-1 ml-7 text-sm text-gray-400">
             {pro}
           </li>
+         </div>
         ))}
       </div>
     </div>
