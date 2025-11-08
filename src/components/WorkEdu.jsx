@@ -1,8 +1,6 @@
-
-
 export default function WorkEdu({ Title, Place, Date, Desc, project }) {
   return (
-    <div className=" mt-5 rounded-sm border border-gray-800 dark:border-gray-300 p-5">
+    <div className=" mt-5 rounded-sm border border-gray-800 dark:border-gray-300 p-5  ">
       <div className="flex justify-between items-center gap-2 md:gap-0  ">
         <div className=" flex items-center justify-center ">
           {/* <div className=" bg-gray-700 rounded-4xl w-10 h-10 "></div> */}

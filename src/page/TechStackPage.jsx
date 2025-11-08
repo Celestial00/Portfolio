@@ -4,22 +4,11 @@ import { RiNextjsLine, RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandMongodb, TbBrandFlutter } from "react-icons/tb";
 import { IoFlaskOutline } from "react-icons/io5";
 
-const techStack = [
-  { name: "Node.js", icon: FaNodeJs },
-  { name: "Express.js", icon: SiExpress },
-  { name: "Next.js", icon: RiNextjsLine },
-  { name: "MongoDB", icon: TbBrandMongodb },
-  { name: "Flask", icon: IoFlaskOutline },
-  { name: "Tailwindcss", icon: RiTailwindCssFill },
-  { name: "React", icon: FaReact },
-  { name: "Flutter", icon: TbBrandFlutter },
-];
-
 export default function TechStackPage() {
   const techStack = [
-    { name: "Node.js", icon: FaNodeJs },
-    { name: "Express.js", icon: SiExpress },
-    { name: "Next.js", icon: RiNextjsLine },
+    { name: "Nodejs", icon: FaNodeJs },
+    { name: "Expressjs", icon: SiExpress },
+    { name: "Nextjs", icon: RiNextjsLine },
     { name: "MongoDB", icon: TbBrandMongodb },
     { name: "Flask", icon: IoFlaskOutline },
     { name: "Tailwindcss", icon: RiTailwindCssFill },
@@ -33,17 +22,17 @@ export default function TechStackPage() {
         {techStack.map((tool, index) => {
           const Icon = tool.icon;
           return (
-            <div key={index}>
-              <div className="  flex flex-col items-center justify-center gap-2 cursor-pointer rounded-xl border dark:border-gray-300 border-gray-500 text-white  p-4 ">
+            <div key={index} className="flex items-center gap-5">
+              <div className=" flex flex-col items-center justify-center gap-2 cursor-pointer rounded-xl border dark:border-gray-300 border-gray-500 text-white  p-4 ">
                 <Icon className="text-3xl text-[#FF6A00]" />
                 <span className="text-[11px] text-center text-gray-400">
                   {tool.name}
                 </span>
               </div>
-
-              {/*  */}
-
-              <div className=" flex-1"></div>
+              <div className="flex items-center">
+                <div className=" w-[500px] h-7  bg-[#FF6A00] "></div>
+                <div className=" w-7 rounded-sm bg-blue-50 h-12"></div>
+              </div>
             </div>
           );
         })}

@@ -108,22 +108,16 @@ export default function Section() {
 
       {selected === "work" ? (
         <div className="cursor-pointer w-full text-white flex text-lg justify-center my-5 gap-2 items-center">
-          <motion.div
-            whileHover={{
-              y: showMore ? -3 : 3,
-              borderColor: "#FF6A00",
-              color: "#FF6A00",
-            }}
-            transition={{ duration: 0.3 }}
-            className="border border-gray-600 py-2 px-5 rounded-sm"
+          <div
             onClick={toggleMore}
+            className="group border border-gray-600 hover:border-[#FF6A00] hover:text-[#FF6A00] py-2.5 px-5 rounded-sm transition-all duration-300 cursor-pointer flex justify-center"
           >
             {showMore ? (
-              <IoIosArrowUp className="w-7 h-7 transition-transform duration-300" />
+              <IoIosArrowUp className="w-6 h-6 transition-transform duration-300 group-hover:-translate-y-1" />
             ) : (
-              <IoIosArrowDown className="w-7 h-7 transition-transform duration-300" />
+              <IoIosArrowDown className="w-6 h-6 transition-transform duration-300 group-hover:translate-y-1" />
             )}
-          </motion.div>
+          </div>
         </div>
       ) : null}
     </div>
