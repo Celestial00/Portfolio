@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 export default function WorkEdu({ Title, Place, Date, Desc, project }) {
+  
+
   return (
     <div className=" mt-5 rounded-sm border border-gray-800 dark:border-gray-300 p-5">
       <div className="flex justify-between items-center gap-2 md:gap-0  ">
@@ -25,11 +27,11 @@ export default function WorkEdu({ Title, Place, Date, Desc, project }) {
       <div className="">
         <p className="text-white dark:text-black mt-2 mb-2">Project</p>
         {project.map((pro, index) => (
-         <div className="">
-           <li key={index} className="mt-1 ml-7 text-sm text-gray-400">
-            {pro}
-          </li>
-         </div>
+          <di>
+            <li key={index} className="mt-1 ml-7 text-sm text-gray-400">
+              {pro}
+            </li>
+          </di>
         ))}
       </div>
     </div>
