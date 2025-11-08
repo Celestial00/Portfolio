@@ -23,8 +23,17 @@ export default function Section() {
       place: "Verior - Software House",
       description:
         "Currently working as a Backend Intern using the MERN Stack. Focused on building scalable backend systems and integrating frontend APIs.",
-      date: "Ongoing Internship",
+      date: "10/6/2025 - 15/8/20",
       projects: ["Backend API Development", "MERN Stack Integration"],
+    },
+
+    {
+      title: "Integration Team (Contratual Position)",
+      place: "Saleflo - Sales & Distribution software",
+      description:
+        "Currently working as a Saleflo internel Software integration team learning and growing",
+      date: "10/6/2025 - 15/8/20",
+      projects: ["Rational Database Management System", "Core Php", "Mysql"],
     },
   ];
 
