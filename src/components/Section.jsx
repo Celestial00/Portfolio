@@ -106,24 +106,26 @@ export default function Section() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="cursor-pointer w-full text-white flex text-lg justify-center my-5 gap-2 items-center">
-        <motion.div
-          whileHover={{
-            y: showMore ? -3 : 3,
-            borderColor: "#FF6A00",
-            color: "#FF6A00",
-          }}
-          transition={{ duration: 0.3 }}
-          className="border border-gray-600 py-2 px-5 rounded-sm"
-          onClick={toggleMore}
-        >
-          {showMore ? (
-            <IoIosArrowUp className="w-7 h-7 transition-transform duration-300" />
-          ) : (
-            <IoIosArrowDown className="w-7 h-7 transition-transform duration-300" />
-          )}
-        </motion.div>
-      </div>
+      {selected === "work" ? (
+        <div className="cursor-pointer w-full text-white flex text-lg justify-center my-5 gap-2 items-center">
+          <motion.div
+            whileHover={{
+              y: showMore ? -3 : 3,
+              borderColor: "#FF6A00",
+              color: "#FF6A00",
+            }}
+            transition={{ duration: 0.3 }}
+            className="border border-gray-600 py-2 px-5 rounded-sm"
+            onClick={toggleMore}
+          >
+            {showMore ? (
+              <IoIosArrowUp className="w-7 h-7 transition-transform duration-300" />
+            ) : (
+              <IoIosArrowDown className="w-7 h-7 transition-transform duration-300" />
+            )}
+          </motion.div>
+        </div>
+      ) : null}
     </div>
   );
 }
