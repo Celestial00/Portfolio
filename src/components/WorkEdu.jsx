@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+
 
 export default function WorkEdu({ Title, Place, Date, Desc, project }) {
-  
-
   return (
     <div className=" mt-5 rounded-sm border border-gray-800 dark:border-gray-300 p-5">
       <div className="flex justify-between items-center gap-2 md:gap-0  ">
