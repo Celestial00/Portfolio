@@ -27,7 +27,7 @@ const projects = [
     github: null,
     Live: "https://217.154.117.231",
   },
-   {
+  {
     title: "Portfolio Website",
     description:
       "My personal portfolio built with React and TailwindCSS to showcase projects, skills, and achievements.",
@@ -37,24 +37,44 @@ const projects = [
     Live: "https://shirazali.vercel.app",
   },
   {
-    title: "Health Metric System",
+    title: "Restaurant Website",
     description:
-      "A healthcare system for doctors and patients to track and manage health data, secured using blockchain for medical records.",
-    image: "/assets/HealthMetricsys.png",
-    technologies: ["MongoDB", "Express", "React", "Node.js", "Blockchain"],
-    github: "https://github.com/Celestial00/HealthMetricSystem",
-    Live: null,
+      "A modern restaurant experience combining bold flavors, fresh ingredients, and a beautifully designed, seamless digital journey across all devices.",
+    image: "/assets/vorte.png",
+    technologies: ["Postgres", "Express", "nestjs", "Node.js"],
+    github: null,
+    Live: "https://vortex-rho-nine.vercel.app/",
+  },
+
+  {
+    title: "Basic Portfolio Website",
+    description:
+      "A modern portfolio showcasing clean design, smooth interactions, and high-performance web experiences built with attention to detail and innovation.",
+    image: "/assets/bport.png",
+    technologies: ["Nextjs", "Tailwindcss", "Framer Motion"],
+
+    github: null,
+    Live: "https://basic-port-phi.vercel.app/",
+  },
+  {
+    title: "Shoe Store Website",
+    description:
+      "Step into style with a bold, modern shoe experience designed for comfort, performance, and a seamless shopping journey on any device.",
+    image: "/assets/sho.png",
+    technologies: ["Nextjs", "Tailwindcss", "Framer Motion"],
+
+    github: null,
+    Live: "https://nft-showcase-sigma.vercel.app/",
   },
   {
     title: "AI Pattern Recognition",
     description:
       "A Flutter-based AI app that identifies visual patterns and recommends eCommerce items using smart pattern detection.",
     image: "/assets/PatternEco.png",
-    technologies: ["Flutter", "TensorFlow", "AI", "Pattern Recognition"],
+    technologies: ["Nextjs", "Tailwindcss", "Framer Motion"],
     github: "https://github.com/your-username/ai-pattern-recognition",
     Live: null,
   },
- 
 ];
 
 export default projects;
